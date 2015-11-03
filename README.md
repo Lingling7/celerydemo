@@ -10,18 +10,27 @@ This demo was built on Django, RabbitMQ, MySQL and Flower.
 
 Django, Celery, RabbitMQ, MySQL-python and Flower
 
-## Structure
+## Tree
 ```
-proj
-├── manage.py
+.
+├── README.md
 └── proj
-    ├── __init__.py
-    ├── settings.py
-    └── ...
-└── home
-    ├── __init__.py
-    ├── tasks.py
-    └── ...
+    ├── home
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tasks.py
+    │   ├── tests.py
+    │   └── views.py
+    ├── manage.py
+    └── proj
+        ├── __init__.py
+        ├── celery.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
 ```
 
 ## Tests

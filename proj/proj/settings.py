@@ -93,24 +93,23 @@ CELERY_SEND_EVENTS = True
 CELERYBEAT_SCHEDULER = "djcelery.schedulers.DatabaseScheduler"
 ##########
 
-# !!!!!!!!!!--Enables error emails--!!!!!!!!!!!!
+# --Enables error emails
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 CELERY_SEND_TASK_ERROR_EMAILS = True
-SERVER_EMAIL='coco.lovepig@gmail.com'
+SERVER_EMAIL='test@gmail.com'
 #CELERY_DEFAULT_RATE_LIMIT = 10
 
 # Name and email addresses of recipients
 ADMINS = (
     ('test', 'chenjun@deepforestmedia.com'),
-    ('chenjun','cjlingfirst1@gmail.com'),
 )
 
 # use gmial setting
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_HOST_USER='test@gmail.com'
-EMAIL_HOST_PASSWORD='dfxyax' 
 # unlock google capcha https://accounts.google.com/b/2/DisplayUnlockCaptcha
 # add app password in gmail https://myaccount.google.com/u/1/security
+EMAIL_HOST_PASSWORD='dfxyax' 
 EMAIL_PORT=587
 EMAIL_USE_TLS =True
 
